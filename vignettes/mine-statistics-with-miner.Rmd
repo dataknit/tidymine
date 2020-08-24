@@ -1,0 +1,43 @@
+---
+title: "MINE statistics with tidymine"
+author: "Vignette Author"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{MINE statistics with tidymine}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(tidyverse)
+library(tidymine)
+```
+
+## Motivation
+
+We often want to work out which variables are most relevant for predicting or describing another.
+
+## The Limitations of Correlation
+
+Correlation struggles with this because it is mainly limited to recognising linear patterns.
+
+Here are some examples.
+
+## MINE Statistics
+
+MINE statistics get around this problem.
+
+```{r}
+mlb_2008 %>%
+  tidymine(salary) %>%
+  arrange(-mic)
+```
+

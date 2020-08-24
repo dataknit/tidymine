@@ -1,0 +1,46 @@
+---
+title: "Definitions of the MINE Statistics"
+author: "Vignette Author"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Definitions of the MINE Statistics}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(tidyverse)
+library(tidymine)
+```
+
+`tidymine` calculates several statistics. This page is to guide you through them.
+
+## TL;DR
+
+Statistic | Interpretation | Answers the question
+--- | --- | ---
+MIC | Information content | "How useful is $x$ to know $y$?"
+MAS | Non-monotonicity | "How much does the function go up and down?"
+MEV | Function-ness | "How close is this to being a continuous function?"
+MCN | Complexity | "How much do the values move around?"
+
+Reference: 10.1126/science.1205438
+
+## Maximal Information Coefficient (MIC)
+
+MIC is the main statistic, calculating how much information variable $x$ has about $y$. You can use it as a more sophisticated correlation. It is able to pick up on many more relations than correlation.
+
+
+## Maximum Asymmetry Score (MAS)
+
+This is a measure of *non-monotonicity*. This is roughly 'how much the function goes up and down'.
+
+## 

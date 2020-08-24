@@ -1,0 +1,27 @@
+Package: tidymine
+Type: Package
+Title: Tidy Use of Maximal Information-based Nonparametric Exploration (MINE)
+Version: 0.0.0.9000
+Authors@R: person("Jobi", "Kroese", email = "joe@citizense.org",
+  role = c("aut", "cre"))
+Description: tidymine provides a tidy interface for calculating statistics from the Maximal Information-based Nonparametric Exploration (MINE) family.
+    MINE provides a robust alternative to correlation measures, recognising a range of functional and non-functional relationships between variables.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+URL: htts://tidymine.joekroese.com
+BugReports: https://github.com/joekroese/tidymine/issues
+Imports:
+    dplyr,
+    tibble,
+    minerva,
+    stats,
+    magrittr
+RoxygenNote: 7.1.1
+Depends: 
+    R (>= 2.10)
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat
+VignetteBuilder: knitr

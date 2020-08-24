@@ -1,0 +1,7 @@
+packrat/lib*/
+.Rproj.user
+inst/doc
+.RData
+.Rproj.user
+.Rhistory
+notes/
