@@ -1,0 +1,8 @@
+pandoc: 2.7.3
+pkgdown: 1.5.1
+pkgdown_sha: ~
+articles:
+  mine-statistics-definitions: mine-statistics-definitions.html
+  mine-statistics-with-miner: mine-statistics-with-miner.html
+last_built: 2020-08-24T12:52Z
+

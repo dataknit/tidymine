@@ -1,6 +1,6 @@
 Package: tidymine
 Type: Package
-Title: Tidy Use of Maximal Information-based Nonparametric Exploration (MINE)
+Title: Tidy interface for calculating Maximal Information-based Nonparametric Exploration (MINE) statistics
 Version: 0.0.0.9000
 Authors@R: person("Jobi", "Kroese", email = "joe@citizense.org",
   role = c("aut", "cre"))
