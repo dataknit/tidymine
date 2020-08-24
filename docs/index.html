@@ -82,8 +82,34 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-tidymine provides a tidy interface for calculating statistics from the Maximal Information-based Nonparametric Exploration (MINE) family.
-    MINE provides a robust alternative to correlation measures, recognising a range of functional and non-functional relationships between variables.
+<div id="tidymine" class="section level1">
+<div class="page-header"><h1 class="hasAnchor">
+<a href="#tidymine" class="anchor"></a>tidymine</h1></div>
+<p>tidymine provides a tidy interface for calculating statistics from the Maximal Information-based Nonparametric Exploration (MINE) family. MINE statistics are a robust alternative to correlation measures, recognising a range of functional and non-functional relationships between variables.</p>
+<div id="getting-started" class="section level2">
+<h2 class="hasAnchor">
+<a href="#getting-started" class="anchor"></a>Getting Started</h2>
+<div id="installation" class="section level3">
+<h3 class="hasAnchor">
+<a href="#installation" class="anchor"></a>Installation</h3>
+<p>Install the latest development version from GitHub:</p>
+<pre class="{r}"><code>if (!require("devtools")) {
+  install.packages("devtools")
+}
+devtools::install_github("joekroese/tidymine")</code></pre>
+</div>
+<div id="examples" class="section level3">
+<h3 class="hasAnchor">
+<a href="#examples" class="anchor"></a>Examples</h3>
+<pre class="{r}"><code><a href="https://tidyverse.tidyverse.org/reference">library(tidyverse)
+library(tidymine)
+
+who %&gt;%
+  tidymine(net_primary_school_enrolment_ratio_female) %&gt;%
+  arrange(-mic)</a></code></pre>
+</div>
+</div>
+</div>
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
