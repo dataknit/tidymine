@@ -4,3 +4,6 @@
 ^\.Rproj\.user$
 ^notes$
 ^data-raw$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
